@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body class="fondo">
+    <div class="container">
+        <h1 class="text-center text-light my-3">Figuras</h1>
+        <div class="row">
+            <div class="col">
+                <table class="w-100">
+                    <tr>
+                        <td colspan="2"><h2>ancho</h2></td>
+                    </tr>
+                    <tr>
+                        <td class="w-50"><input type="range" class="form-control w-75" id="ancho" min="1" max="300" value="50"></td>
+                        <td class="w-50"><h2 id="vancho">50</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h2>alto</h2></td>
+                    </tr>
+                    <tr>
+                        <td class="w-50"><input type="range" class="form-control w-75" id="alto" min="1" max="300" value="50"></td>
+                        <td class="w-50"><h2 id="valto">50</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h2>Color Relleno</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="color" class="form-control" id="color"></td>
+                    </tr>
+                     <tr>
+                        <td colspan="2"><h2>Radio</h2></td>
+                    </tr>
+                    <tr>
+                        <td class="w-50"><input type="range" class="form-control w-75" id="radio" min="0" max="100" value="0"></td>
+                        <td class="w-50"><h2 id="vradio">0</h2></td>
+                    </tr>
+                     <tr>
+                        <td colspan="2"><h2>Ancho Borde</h2></td>
+                    </tr>
+                    <tr>
+                        <td class="w-50"><input type="range" class="form-control w-75" id="anchoborde" min="0" max="100" value="0"></td>
+                        <td class="w-50"><h2 id="vanchoborde">0</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h2>Tipo Borde</h2></td>
+                    </tr>
+                    <tr>
+                        <td class="w-50">
+                            <select id="tipoborde" class="form-control">
+                                <option value="solid">Solid</option>
+                                <option value="dashed">Dashed</option>
+                                <option value="dotted">Dotted</option>
+                                <option value="double">Double</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h2>Color Borde</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="color" class="form-control" id="colorborde"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col centrar">
+                <div id="figura">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
